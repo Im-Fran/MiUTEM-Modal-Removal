@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "name": "MiUTEM-Modal-Removal",
+    "version": "1.1",
+    "description": "Hide modals (if allowed) that blocks the ability to properly use the site.",
+    "content_scripts": [{
+        "matches": ["*://mi.utem.cl/*"],
+        "js": ["app.js"]
+    }],
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "extension-miutem-mr@franciscosolis.cl"
+        }
+    },
+    "icons": {
+        "256": "icon.png"
+    }
+}
